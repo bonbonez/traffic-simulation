@@ -1,3 +1,5 @@
+// LightPair component simply unites two lights in one group
+
 import React     from 'react';
 import {connect} from 'redux/react';
 import Light     from '../light/light';

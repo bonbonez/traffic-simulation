@@ -1,3 +1,5 @@
+// Light component
+
 import React from 'react';
 import * as Consts from 'constants/simulator';
 

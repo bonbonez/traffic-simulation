@@ -1,3 +1,5 @@
+// Simple switch that changes the enables/disables traffic
+
 import './switch.styl';
 
 import React        from 'react';

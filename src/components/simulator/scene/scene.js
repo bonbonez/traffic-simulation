@@ -1,3 +1,8 @@
+// Scene is where everything is happen.
+// Here are the lights, united in pairs.
+// All components that are nested in Scene
+// are not connected to store
+
 import React     from 'react';
 import {connect} from 'redux/react';
 

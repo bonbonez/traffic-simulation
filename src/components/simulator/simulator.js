@@ -1,3 +1,5 @@
+// Simulator component contains
+
 import React                 from 'react';
 import {connect}             from 'redux/react';
 
@@ -15,6 +17,14 @@ import './simulator.styl';
 }))
 export default class Simulator extends React.Component {
   componentWillMount() {
+
+    // Initializing very primitive automatic state machine.
+    // TrafficStateLoop loops through every state.
+    // Every state has the duration property, which tells
+    // how much time should be passed before going to the next state.
+    // Every time the active state is changed, the callback is fired.
+    // These callbacks are use to dispatch actions that will change
+    // the flux store.
 
     TrafficStateLoop.registerState([
       {
