@@ -22,3 +22,8 @@ open ./index.html
 ```
 
 P.S. Yes, it is a total overkill for traffic simulation app, but now it can be scaled to GoogleMaps size!
+
+## What is not included
+For the speed purposes, I decided not spend time on this features
+* mobile version
+* covering with tests
