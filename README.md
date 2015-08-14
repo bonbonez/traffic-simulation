@@ -12,7 +12,7 @@ It is very simple, `npm start` command will do all the job
 ```
 npm start
 ```
-By default, web server is listening localhost at 8080 port (http://localhost:8080).
+This command will invoke `npm install && npm run dev` commands. The second one will launch a development web server. By default, web server is listening localhost at 8080 port (http://localhost:8080).
 It can be changed by editing `/webpack/host.js` file
 
 ## Run without web server, as simple .html file
