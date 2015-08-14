@@ -1,0 +1,35 @@
+{
+  "name": "traffic-simulation",
+  "version": "0.0.1",
+  "description": "Implementation of traffic simulation exercise task",
+  "scripts": {
+    "start": "npm install && npm run dev",
+    "build": "npm run _build_clean && node ./webpack/build.js",
+    "dev": "node ./webpack/server.js",
+
+    "_build_clean": "rimraf ./build/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bonbonez/traffic-simulation.git"
+  },
+  "dependencies": {
+    "react": "^0.13.3",
+    "redux": "^0.12.0"
+  },
+  "devDependencies": {
+    "babel-core": "^5.5.8",
+    "babel-loader": "^5.1.4",
+
+    "style-loader": "^0.12.3",
+    "css-loader": "^0.15.2",
+    "postcss-loader": "^0.5.1",
+    "stylus-loader": "^1.2.1",
+
+    "node-libs-browser": "^0.5.2",
+    "react-hot-loader": "^1.2.7",
+    "webpack": "^1.9.11",
+    "webpack-dev-server": "^1.9.0",
+    "rimraf": "^2.4.1"
+  }
+}

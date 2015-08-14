@@ -1,0 +1,64 @@
+.light
+  display: inline-block
+  height: 120px
+  font-size: 0
+  position: absolute
+  width: 40px
+
+  &.m-top
+    left: 50%
+    top: 10px
+    transform: translateX(-50%)
+
+  &.m-bottom
+    bottom: 10px
+    left: 50%
+    transform: translateX(-50%)
+
+  &.m-left
+    left: 10px
+    top: 50%
+    transform: translateY(-50%)
+
+  &.m-right
+    right: 10px
+    top: 50%
+    transform: translateY(-50%)
+
+.light-glass
+  box-sizing: border-box
+  border-radius: 40px
+  border: 1px solid rgba(0, 0, 0, 0.4)
+  display: block
+  height: 40px
+  overflow: hidden
+  position: relative
+  transition: all 0.3s ease
+  width: 100%
+
+  &::before
+    border-radius: 40px
+    content: ' '
+    height: 100%
+    left: 0
+    opacity: 0.1
+    overflow: hidden
+    position: absolute
+    top: 0
+    transition: all 0.3s ease
+    width: 100%
+
+
+  &.m-red::before
+    background-color: #ff0000
+
+  &.m-orange::before
+    background-color: #ff7700
+
+  &.m-green::before
+    box-shadow: 0px 0px 7px rgba(0, 255, 0, 1)
+    background-color: #00ff00
+
+  &.m-active
+    &::before
+      opacity: 1

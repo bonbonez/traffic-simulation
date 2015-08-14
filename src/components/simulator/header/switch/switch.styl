@@ -1,0 +1,46 @@
+switch-shadow-color = #555555
+color-blue          = #6983E7
+color-blue-lighter  = #718df9
+
+.switch
+  background-color: color-blue
+  border: 0
+  box-shadow: -1px 1px 0px switch-shadow-color, -2px 2px 0px switch-shadow-color, -3px 3px 0px switch-shadow-color, -4px 4px 0px switch-shadow-color, -5px 5px 0px switch-shadow-color, -6px 6px 0px switch-shadow-color
+  cursor: pointer
+  display: inline-block
+  height: 50px
+  position: relative
+  right: -6px
+  top: -6px
+  width: 100px
+
+  &:hover
+    background-color: color-blue-lighter
+    outline: 0
+
+  &.m-active
+    box-shadow: -1px 1px 0px switch-shadow-color, -2px 2px 0px switch-shadow-color
+    right: -2px
+    top: -2px
+
+    &::before
+      border-left-color: #ffe700
+
+  &:active
+    box-shadow: -1px 1px 0px switch-shadow-color
+    right: -1px
+    top: -1px
+
+  &:focus
+    outline: 0
+
+  &::before
+    content: ' '
+    border-left: 20px solid #ffffff
+    border-top: 13px solid transparent
+    border-bottom: 13px solid transparent
+    left: 50%
+    position: absolute
+    top: 50%
+    transition: border-color 0.15s ease
+    transform: translate(-50%, -50%)
